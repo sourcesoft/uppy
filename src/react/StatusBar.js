@@ -28,7 +28,7 @@ class StatusBar extends React.Component {
   componentWillUnmount () {
     const uppy = this.props.uppy
 
-    uppy.removePlugin(this.plugin)
+    this.plugin && uppy.removePlugin(this.plugin)
   }
 
   render () {
